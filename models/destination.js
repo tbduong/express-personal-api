@@ -3,6 +3,7 @@ var mongoose = require('mongoose'),
 
 var DestinationSchema = new Schema({
   city: String,
+  state: String,
   country: String,
   international: Boolean
 
