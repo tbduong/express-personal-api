@@ -2,8 +2,8 @@ var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 var TravelSchema = new Schema({
-  description: String,
   city: String,
+  state: String,
   country: String,
   year_visited: String,
   video: String,      //attach link to vimeo.com
