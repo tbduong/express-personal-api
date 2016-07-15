@@ -16,22 +16,12 @@ var db = require('./models'); //requires models folder to access ALL models
 
 var travels_list = [
   {
-    city: String,
-    country: String,
-    year_visited: String,
+    city: "Torres del Paine",
+    state: null,
+    country: "Chile",
+    year_visited: 2016,
     video: String,      //attach link to vimeo.com
     image: String,      //upload local img
-    international: Boolean
-
-
-
-
-
-
-
-
-
-
-
-}
+    international: true
+  }
 ];

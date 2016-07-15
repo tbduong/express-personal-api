@@ -1,10 +1,13 @@
 // require express and other modules
 var express = require('express'),
-    app = express();
+ bodyParser = require('body-parser');
+         db = require('./models');
+
+var app = express();
 
 // parse incoming urlencoded form data
 // and populate the req.body object
-var bodyParser = require('body-parser');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // allow cross origin requests (optional)
@@ -19,7 +22,7 @@ app.use(function(req, res, next) {
  * DATABASE *
  ************/
 
-// var db = require('./models');
+
 
 /**********
  * ROUTES *
@@ -57,6 +60,47 @@ app.get('/api', function api_index(req, res) {
     ]
   });
 });
+
+//get all travels
+app.get('/api/travels', function (req, res) {
+    //send all travels as JSON response
+    db.Travel.find(function TravelsListed(err, allTravels){
+        res.json({travels: allTravels});
+
+
+
+    });
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**********
  * SERVER *
