@@ -53,7 +53,9 @@ app.get('/api', function api_index(req, res) {
       {method: "GET", path: "/api", description: "Describes all available endpoints"},
       {method: "GET", path: "/api/profile", description: "Data about me!"}, // CHANGE ME
       {method: "GET", path: "/api/travels", description: "Shows all (most) of the places I have traveled to"},
-      {method: "POST", path: "/api/campsites", description: "E.g. Create a new campsite"} // CHANGE ME
+      {method: "GET", path: "/api/destinations", description: "Shows all of the places I would love to visit"},
+
+      {method: "POST", path: "/api/destinations", description: "Add a recommended destination!"}
     ]
   });
 });
