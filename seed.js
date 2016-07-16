@@ -26,10 +26,11 @@ var travels_list = [
   }
 ];
 
-db.Travel.save(travels_list, function(err, travel){
+db.Travel.create(travels_list, function(err, travel){
   if (err){
-    return console.log("Error:", err);
+    console.log("!!!!!!!Error:", err);
+    return;
   }
-  console.log("travels saved!");
+  console.log("Created" + travel);
   res.json(travel);
 });

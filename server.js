@@ -35,7 +35,6 @@ app.use(express.static('public'));
 /*
  * HTML Endpoints
  */
-
 app.get('/', function homepage(req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
@@ -74,13 +73,10 @@ app.get('/api/profile', function profile_index(req, res){
 
 
 
-
-
-
 //get all travels
-app.get('/api/travels', function (req, res) {
+app.get('/api/travels', function travelIndex (req, res) {
     //send all travels as JSON response
-    db.Travel.find(function TravelsListed(err, allTravels){
+    db.Travel.find(function (err, allTravels){
         res.json({travels: allTravels});
     });
 
