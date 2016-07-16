@@ -19,11 +19,19 @@ var travels_list = [
     city: "Torres del Paine",
     state: null,
     country: "Chile",
-    year_visited: 2016,
-    video: String,      //attach link to vimeo.com
-    image: String,      //upload local img
+    year_visited: "2016",
+    video: null,      //attach link to vimeo.com
+    image: null,      //upload local img
     international: true
-  }
+  },
+  {
+    city: "Seattle",
+    state: "Washington",
+    country: "US",
+    year_visited: "2014",
+    video: null,      //attach link to vimeo.com
+    image: null,      //upload local img
+    international: false}
 ];
 
 
@@ -32,9 +40,9 @@ var travels_list = [
 
 db.Travel.create(travels_list, function(err, travel){
   if (err){
-    console.log("!!!!!!!Error:" + err); 
+    console.log("!!!!!!!Error:" + err);
     return;
   }
   console.log("Created" + travel);
-  res.json(travel);
+  // res.json(travel);
 });
