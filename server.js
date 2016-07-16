@@ -43,7 +43,6 @@ app.get('/', function homepage(req, res) {
 /*
  * JSON API Endpoints
  */
-
 app.get('/api', function api_index(req, res) {
   // TODO: Document all your api endpoints below
   res.json({
