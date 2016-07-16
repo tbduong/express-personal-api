@@ -73,12 +73,12 @@ app.get('/api/profile', function profile_index(req, res){
 
 
 //get all travels
-app.get('/api/travels', function travelIndex (req, res) {
-    //find all travels in db
-    db.Travel.find(function (err, allTravels){
-        console.log(allTravels);
-        res.json(allTravels);
-    });
+// app.get('/api/travels', function travelIndex (req, res) {
+//     //find all travels in db
+//     db.Travel.find(function (err, allTravels){
+//         res.json({travels: allTravels});
+//     });
+//
 
 
 

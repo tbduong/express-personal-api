@@ -26,9 +26,13 @@ var travels_list = [
   }
 ];
 
+
+
+
+
 db.Travel.create(travels_list, function(err, travel){
   if (err){
-    console.log("!!!!!!!Error:", err);
+    console.log("!!!!!!!Error:" + err); 
     return;
   }
   console.log("Created" + travel);
