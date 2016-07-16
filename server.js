@@ -66,9 +66,6 @@ app.get('/api/travels', function (req, res) {
     //send all travels as JSON response
     db.Travel.find(function TravelsListed(err, allTravels){
         res.json({travels: allTravels});
-
-
-
     });
 
 

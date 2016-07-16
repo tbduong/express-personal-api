@@ -25,3 +25,10 @@ var travels_list = [
     international: true
   }
 ];
+
+db.Travel.save(travels_list, function(err, travel){
+  if (err){
+    return console.log("Error:", err);
+  }
+  console.log("travels saved!");
+});
