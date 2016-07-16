@@ -83,11 +83,6 @@ app.get('/api/profile', function profile_index(req, res){
 
 
 
-});
-
-
-
-
 
 
 
