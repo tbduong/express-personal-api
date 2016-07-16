@@ -70,15 +70,24 @@ app.get('/api/profile', function profile_index(req, res){
     });
 });
 
-
-
 //get all travels
-// app.get('/api/travels', function travelIndex (req, res) {
-//     //find all travels in db
-//     db.Travel.find(function (err, allTravels){
-//         res.json({travels: allTravels});
-//     });
-//
+app.get('/api/travels', function travelIndex (req, res) {
+    //find all travels in db
+    db.Travel.find(function (err, allTravels){
+        res.json({travels: allTravels});
+    });
+  });
+
+//find one travel entry by id
+app.get('/api/travels/:id', function foundTravelEntry (req, res) {
+  db.Travel.findById(req.params.id, function (err, travel){
+    if (err) {
+        return console.log("!!! ERROR for finding entry !!!!");
+    }
+      res.json(travel);
+  });
+});
+
 
 
 

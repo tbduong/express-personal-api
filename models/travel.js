@@ -9,7 +9,6 @@ var TravelSchema = new Schema({
   video: String,      //attach link to vimeo.com
   image: String,      //upload local img
   international: Boolean
-
 });
 
 var Travel = mongoose.model('Travel', TravelSchema); //set travel model to variable 'Travel'

@@ -32,17 +32,20 @@ var travels_list = [
     video: null,      //attach link to vimeo.com
     image: null,      //upload local img
     international: false}
-];
+  ];
 
-
-
-
-
-db.Travel.create(travels_list, function(err, travel){
-  if (err){
-    console.log("!!!!!!!Error:" + err);
-    return;
-  }
-  console.log("Created" + travel);
-  // res.json(travel);
-});
+  //remove "messed around seeds" travels
+  db.Travel.remove({}, function(err, travels) {
+    if (err) {
+      console.log("!!! ERROR OCCURED IN REMOVAL !!!", err);
+    } else {
+      console.log("!!! Removed all travel entries !!!");
+    }
+    db.Travel.create(travels_list, function(err, savedTravels){
+      if (err){
+        return console.log("!!!!!!!Error:", err);
+      }
+      console.log("Created" + savedTravels);
+      process.exit();
+    });
+  });
