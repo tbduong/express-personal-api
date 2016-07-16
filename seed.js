@@ -31,4 +31,5 @@ db.Travel.save(travels_list, function(err, travel){
     return console.log("Error:", err);
   }
   console.log("travels saved!");
+  res.json(travel);
 });

@@ -61,6 +61,22 @@ app.get('/api', function api_index(req, res) {
   });
 });
 
+//document all profile information below
+app.get('/api/profile', function profile_index(req, res){
+    res.json({
+      name: "Tiffani Duong",
+      github_link: "https://github.com/tbduong",
+      profile_img: "/public/images/profile_img.jpeg",
+      current_city: "San Francisco",
+      ig_link: "https://www.instagram.com/t1ffduong"
+    });
+});
+
+
+
+
+
+
 //get all travels
 app.get('/api/travels', function (req, res) {
     //send all travels as JSON response
