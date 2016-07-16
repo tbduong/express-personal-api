@@ -1,8 +1,7 @@
 // require express and other modules
 var express = require('express'),
- bodyParser = require('body-parser');
+ bodyParser = require('body-parser'),
          db = require('./models');
-   mongoose = require("mongoose");
 
 var app = express();
 
