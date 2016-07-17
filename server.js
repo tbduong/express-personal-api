@@ -126,15 +126,21 @@ app.put('/api/travels/:id', function updateTravel(req,res) {
     });
   });
 
-
 //delete travel entryapp.delete('/api/photos/:id', function (req, res) {
-// get book id from url params (`req.params`)
-console.log(req.params);
-var travelId = req.params.id;
-
-db.Travel.findOneAndRemove({ _id: travelID }, function (err, deletedTravel) {
-  res.json(deletedTravel);
+// console.log(req.params);
+//
+// db.Travel.findOneAndRemove({ _id: req.params.id }, function (err, deletedTravel) {
+//   res.json(deletedTravel);
+//   });
+app.delete('/api/travels/:id', function(req, res) {
+  // console.log(req.params);
+  var travelId = req.params.id;
+  db.Travel.findOneAndRemove({_id: travelId}, function(err, deletedTravel) {
+    if (err) { res.sendStatus(410); }
+    console.log('DELETED ', deletedTravel.name);
+    res.json(deletedTravel);
   });
+});
 
 });
 
