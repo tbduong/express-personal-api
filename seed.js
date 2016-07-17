@@ -18,7 +18,7 @@ var travels_list = [
     state: null,
     country: "Chile",
     year_visited: "2016",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: true
   },
   {
@@ -26,7 +26,7 @@ var travels_list = [
     state: null,
     country: "Chile",
     year_visited: "2016",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: true
   },
   {
@@ -34,7 +34,7 @@ var travels_list = [
     state: null,
     country: "Austria",
     year_visited: "2015",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: true
   },
   {
@@ -42,7 +42,7 @@ var travels_list = [
     state: null,
     country: "Italy",
     year_visited: "2015",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: true
   },
   {
@@ -50,7 +50,7 @@ var travels_list = [
     state: null,
     country: "Croatia",
     year_visited: "2015",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: true
   },
   {
@@ -58,7 +58,7 @@ var travels_list = [
     state: null,
     country: "Canada",
     year_visited: "2015",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: true
   },
   {
@@ -66,7 +66,7 @@ var travels_list = [
     state: "Utah",
     country: "US",
     year_visited: "2016",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: false
   },
   {
@@ -74,7 +74,7 @@ var travels_list = [
     state: "Arizona",
     country: "US",
     year_visited: "2016",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: false
   },
   {
@@ -82,7 +82,7 @@ var travels_list = [
     state: "Oregon",
     country: "US",
     year_visited: "2016",
-    video: null,      //attach link to vimeo.com
+    image: null,
     international: false
   },
   {
@@ -90,7 +90,7 @@ var travels_list = [
     state: "New York",
     country: "US",
     year_visited: "2015",
-    video: null,      //attach link to vimeo.com
+    image: null ,
     international: false
   },
   {
@@ -98,7 +98,7 @@ var travels_list = [
     state: "Washington",
     country: "US",
     year_visited: "2014",
-    video: null,      //attach link to vimeo.com
+    image: null ,
     international: false
   },
   {
@@ -106,7 +106,7 @@ var travels_list = [
     state: null,
     country: "Curacao",
     year_visited: "2013",
-    video: null,      //attach link to vimeo.com
+    image: null ,
     international: true
   },
   ];

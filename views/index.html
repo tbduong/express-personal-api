@@ -28,26 +28,58 @@
     </div>
   </div>
 </div>
-<div class="col-md-8 col.md-offset-2">
+<div class="col-md-4 col.md-offset-2">
   <form class="form-inline" id="newTravelEntryForm">
+
     <div class="form-group">
       <label for="city">City</label>
       <input type="text" class="form-control" name="city" placeholder="city name">
     </div>
+
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" class="form-control" name="state" placeholder="state name">
+    </div>
+
     <div class="form-group">
       <label for="country">country</label>
       <input type="text" class="form-control" name="country" placeholder="country name">
     </div>
+
     <div class="form-group">
-      <label for="country">country</label>
-      <input type="text" class="form-control" name="country" placeholder="country name">
+      <label for="year-visited">Year Visited</label>
+      <input type="text" class="form-control" name="year visited" placeholder="year">
     </div>
+
     <div class="form-group">
-      <label for="country">country</label>
-      <input type="text" class="form-control" name="country" placeholder="country name">
+      <label for="international">International?</label>
+      <input type="text" class="form-control" name="international" placeholder="international? true/false">
     </div>
+
     <button type="submit" class="btn btn-default">Create Entry</button>
   </form>
+
+  <div class="travelEntry">
+          <script id="entry-template" type="text/x-handlebars-template">
+          <h1 class="giant"> Travels </h1>
+            <ul>
+             <li> city: {{city}} </li>
+             <li> state: {{state}} </li>
+             <li> country: {{country}} </li>
+             <li> year_visited: {{year_visted}} </li>
+             <li> video: {{video}} </li>
+             <li> international: {{international}} </li>
+            <ul>
+          </script>
+
+
+<!--</div>
+<div class="col-md-4 col.md-offset-2">
+  <p> </p>
 </div>
+
+<div class="col-md-4 col.md-offset-2">
+</div> -->
+
 </body>
 </html>
