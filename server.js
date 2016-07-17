@@ -137,7 +137,7 @@ app.delete('/api/travels/:id', function(req, res) {
   var travelId = req.params.id;
   db.Travel.findOneAndRemove({_id: travelId}, function(err, deletedTravel) {
     if (err) { res.sendStatus(410); }
-    console.log('DELETED ', deletedTravel.name);
+    console.log('You just deleted ', deletedTravel);
     res.json(deletedTravel);
   });
 });
