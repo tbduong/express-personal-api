@@ -12,7 +12,6 @@ var db = require('./models'); //requires models folder to access ALL models.
 //   console.log("Created new campsite", campsite._id)
 //   process.exit(); // we're all done! Exit the program.
 // })
-
 var travels_list = [
   {
     city: "Torres del Paine",
@@ -20,7 +19,6 @@ var travels_list = [
     country: "Chile",
     year_visited: "2016",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   {
@@ -29,7 +27,6 @@ var travels_list = [
     country: "Chile",
     year_visited: "2016",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   {
@@ -38,7 +35,6 @@ var travels_list = [
     country: "Austria",
     year_visited: "2015",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   {
@@ -47,7 +43,6 @@ var travels_list = [
     country: "Italy",
     year_visited: "2015",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   {
@@ -56,7 +51,6 @@ var travels_list = [
     country: "Croatia",
     year_visited: "2015",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   {
@@ -65,7 +59,6 @@ var travels_list = [
     country: "Canada",
     year_visited: "2015",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   {
@@ -74,7 +67,6 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: false
   },
   {
@@ -83,7 +75,6 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: false
   },
   {
@@ -92,7 +83,6 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: false
   },
   {
@@ -101,7 +91,6 @@ var travels_list = [
     country: "US",
     year_visited: "2015",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: false
   },
   {
@@ -110,7 +99,6 @@ var travels_list = [
     country: "US",
     year_visited: "2014",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: false
   },
   {
@@ -119,7 +107,6 @@ var travels_list = [
     country: "Curacao",
     year_visited: "2013",
     video: null,      //attach link to vimeo.com
-    image: null,      //upload local img
     international: true
   },
   ];

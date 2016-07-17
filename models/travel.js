@@ -7,7 +7,6 @@ var TravelSchema = new Schema({
   country: String,
   year_visited: String,
   video: String,      //attach link to vimeo.com
-  image: String,      //upload local img
   international: Boolean
 });
 

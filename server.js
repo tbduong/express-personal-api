@@ -116,8 +116,13 @@ app.put('/api/travels/:id', function updateTravel(req,res) {
     // console.log(req.params);
     // console.log("logging the body");
     // console.log(req.body);
-    foundTravel.city=req.body.city;
-    // add newPhoto to database
+    foundTravel.city = req.body.city;
+    foundTravel.state = req.body.state;
+    foundTravel.country = req.body.country;
+    foundTravel.year_visited = req.body.year_visited;
+    foundTravel.video = req.body.video;  //attach link to vimeo.com
+    foundTravel.international = req.body.international;
+    // add newTravel to database
     foundTravel.save(function(err, updatedTravel){
       if (err) {
         return console.log("create error: " + err);
