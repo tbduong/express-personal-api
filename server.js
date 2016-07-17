@@ -52,7 +52,9 @@ app.get('/api', function api_index(req, res) {
       {method: "GET", path: "/api/profile", description: "Data about me!"}, // CHANGE ME
       {method: "GET", path: "/api/travels", description: "Shows all (most) of the places I have traveled to"},
       {method: "GET", path: "/api/travels/:id", description: "Shows all (most) of the places I have traveled to by ID"},
-      {method: "PUT", path: "/api/travels/:id", description: "Add a recommended destination!"}
+      {method: "POST", path: "/api/travels/:id", description: "Add a recommended destination!"},
+      {method: "PUT", path: "/api/travels/:id", description: "Edit a current travel entry by id"},
+      {method: "DELETE", path: "/api/travels/:id", description: "Delete a travel entry by id"}
     ]
   });
 });
@@ -123,9 +125,18 @@ app.put('/api/travels/:id', function updateTravel(req,res) {
       res.json(updatedTravel);
     });
   });
+
+
+//delete travel entryapp.delete('/api/photos/:id', function (req, res) {
+// get book id from url params (`req.params`)
+console.log(req.params);
+var travelId = req.params.id;
+
+db.Travel.findOneAndRemove({ _id: travelID }, function (err, deletedTravel) {
+  res.json(deletedTravel);
+  });
+
 });
-
-
 
 
 
