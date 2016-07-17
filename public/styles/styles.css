@@ -1,11 +1,11 @@
 .jumbotron {
-    background-color: blue;
+    background-color: gray;
     text-align:center;
     font-family: sans-serif;
 }
 
 body {
-    background-color: black;
+    background-image: url(/images/torres.jpeg);
 }
 
 h1 {
