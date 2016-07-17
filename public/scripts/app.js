@@ -5,7 +5,7 @@ var allTravels = [];
 
 $(document).ready(function(){
 
-$travelsList = $('#travelTarget');
+$travelsList = $('#target');
 
 //comple handlebars template
 var source = $("#travels-template").html();
@@ -38,14 +38,13 @@ $.ajax({
     });
   });
 
-
-  // helper function to render all posts to view
+  // function to render all posts to view
   // note: we empty and re-render the collection each time our post data changes
   function render () {
     // empty existing posts from view
     $travelsList.empty();
     // pass `allTravels` into the template function
-    var travelsHtml = template({ travel: allTravels.travels});
+    var travelsHtml = template({ travels: allTravels.travels});
     // append html to the view
     $travelsList.append(travelsHtml);
   }
@@ -73,7 +72,6 @@ $.ajax({
   function deleteTravelSuccess(json) {
     var travel = json;
     var travelId = travel._id;
-
     // find the travel entry with the correct ID and remove it from our allBooks array
     for(var index = 0; index < allTravels.length; index++) {
       if(allTravels[index]._id === TravelId) {
@@ -88,7 +86,5 @@ $.ajax({
 
   }
 
-
-// your code
 
 });

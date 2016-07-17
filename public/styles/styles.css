@@ -8,7 +8,7 @@
 body {
     background-image: url(/images/torresBig.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     opacity: 0.9
 }
 

@@ -4,12 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tiffani Duong</title>
-
+  <title>Tiffani Duong Travel API</title>
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/styles/styles.css">
-
   <!-- VENDOR SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
@@ -19,7 +17,7 @@
 </head>
 <body>
   <div class="jumbotron">
-    <h1 class="display-3"> Welcome. </h1>
+    <h1 class="display-3"> Travelers App </h1>
     <p class="lead">Here you can access the API to my many travels in recent years. Enjoy the content!</p>
     <hr class="m-y-2">
     <p>Please feel free to add any suggested trips or trips you have been on.</p>
@@ -28,6 +26,7 @@
     </div>
   </div>
 </div>
+
 <div class="col-md-12">
   <form class="form-inline" id="newTravelForm">
 
@@ -35,42 +34,41 @@
       <label for="city">City</label>
       <input type="text" class="form-control" name="city" placeholder="city name">
     </div>
-
     <div class="form-group">
       <label for="state">State</label>
       <input type="text" class="form-control" name="state" placeholder="state name">
     </div>
-
     <div class="form-group">
-      <label for="country">country</label>
+      <label for="country">Country</label>
       <input type="text" class="form-control" name="country" placeholder="country name">
     </div>
-
     <div class="form-group">
       <label for="year-visited">Year Visited</label>
       <input type="text" class="form-control" name="year visited" placeholder="year">
     </div>
-
     <div class="form-group">
       <label for="international">International?</label>
       <input type="text" class="form-control" name="international" placeholder="international? true/false">
     </div>
-
     <button type="submit" class="btn btn-default">Create Entry</button>
   </form>
 
-  <div id="travelTarget">
+<!-- travel handlebars template -->
+<div class= col-md-12>
+  <div id="target">
           <script id="travels-template" type="text/x-handlebars-template">
-          <h1 class="giant"> Travels </h1>
-            <ul>
-             <li> city: {{city}} </li>
-             <li> state: {{state}} </li>
-             <li> country: {{country}} </li>
-             <li> year_visited: {{year}} </li>
-             <li> image: {{image}} </li>
-             <li> international: {{international}} </li>
-            <ul>
+            {{#each travels}}
+            <ul class=entries>
+              <img src ="{{image}}" class ="image">
+              <li>City: {{city}}<li>
+              <li>State: {{state}}</li>
+              <li>Country: {{country}}</li>
+              <li>Year visited: {{year_visited}}</li>
+              <li>International: {{international}}</li>
+            </p>
+            {{/each}}
           </script>
+        </div>
 </div>
 
 </body>

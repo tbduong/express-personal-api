@@ -111,7 +111,7 @@ var travels_list = [
   },
   ];
 
-  //remove "messed around" seeds of travels
+  //remove "messed around" seeds of travels, refreshes back to initial db
   db.Travel.remove({}, function(err, savedTravels) {
     if (err) {
       console.log("!!! ERROR OCCURED IN REMOVAL !!!", err);
