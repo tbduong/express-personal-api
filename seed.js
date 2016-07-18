@@ -19,7 +19,8 @@ var travels_list = [
     country: "Chile",
     year_visited: "2016",
     image: null,
-    international: true
+    international: true,
+    description:" "
   },
   {
     city: "Santiago",
@@ -27,7 +28,8 @@ var travels_list = [
     country: "Chile",
     year_visited: "2016",
     image: null,
-    international: true
+    international: true,
+    description:" "
   },
   {
     city: "Vienna",
@@ -35,7 +37,8 @@ var travels_list = [
     country: "Austria",
     year_visited: "2015",
     image: null,
-    international: true
+    international: true,
+    description:" "
   },
   {
     city: "Venice",
@@ -43,7 +46,8 @@ var travels_list = [
     country: "Italy",
     year_visited: "2015",
     image: null,
-    international: true
+    international: true,
+    description:" "
   },
   {
     city: "Dubrovnik",
@@ -51,7 +55,8 @@ var travels_list = [
     country: "Croatia",
     year_visited: "2015",
     image: null,
-    international: true
+    international: true,
+    description:" "
   },
   {
     city: "Vancouver",
@@ -59,7 +64,8 @@ var travels_list = [
     country: "Canada",
     year_visited: "2015",
     image: null,
-    international: true
+    international: true,
+    description:" "
   },
   {
     city: "Zion National Park",
@@ -67,7 +73,8 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     image: null,
-    international: false
+    international: false,
+    description:" "
   },
   {
     city: "Page (Antelope Canyon)",
@@ -75,7 +82,8 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     image: null,
-    international: false
+    international: false,
+    description:" "
   },
   {
     city: "Portland",
@@ -83,7 +91,8 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     image: null,
-    international: false
+    international: false,
+    description:" "
   },
   {
     city: "New York",
@@ -91,7 +100,8 @@ var travels_list = [
     country: "US",
     year_visited: "2015",
     image: null ,
-    international: false
+    international: false,
+    description:" "
   },
   {
     city: "Seattle",
@@ -99,7 +109,8 @@ var travels_list = [
     country: "US",
     year_visited: "2014",
     image: null ,
-    international: false
+    international: false,
+    description:" "
   },
   {
     city: "Jan Thiel",
@@ -107,7 +118,8 @@ var travels_list = [
     country: "Curacao",
     year_visited: "2013",
     image: null ,
-    international: true
+    international: true,
+    description:" "
   },
   ];
 

@@ -17,7 +17,7 @@
 </head>
 <body>
   <div class="jumbotron">
-    <h1 class="display-3"> Travelers App </h1>
+    <h1 class="display-3"> Traveler Log App </h1>
     <p class="lead">Here you can access the API to my many travels in recent years. Enjoy the content!</p>
     <hr class="m-y-2">
     <p>Please feel free to add any suggested trips or trips you have been on.</p>
@@ -50,9 +50,13 @@
       <label for="international">International?</label>
       <input type="text" class="form-control" name="international" placeholder="international? true/false">
     </div>
+     <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" name="description" placeholder="Tell us about the trip!">
+      </div>
     <button type="submit" class="btn btn-default">Create Entry</button>
   </form>
-
+<br></br>
 <!-- travel handlebars template -->
 <div class= col-md-12>
   <div id="target">
@@ -64,7 +68,10 @@
               <li>Country: {{country}}</li>
               <li>Year visited: {{year_visited}}</li>
               <li>International: {{international}}</li>
+              <li>Description: {{description}}<li>
+              <button id="delete" type="delete" class="btn btn-default">Delete Entry</button>
             {{/each}}
+            <br></br>
           </script>
         </div>
 </div>
