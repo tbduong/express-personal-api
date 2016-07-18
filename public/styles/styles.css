@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    opacity: 0.9
+    opacity: 0.8;
 }
 
 h1 {
@@ -34,19 +34,25 @@ h4 {
 #target {
     color: white;
     font-weight: bold;
-    opacity: .9;
     text-shadow: #000 0px 0px 1px;
 }
 
-#delete {
-    float: right;
+.delete-btn {
+    float:right;
+    margin-top: 5px;
 }
 
-.box {
+.col-md-6 {
     border-style: solid;
-    border-color: gray;
+    border-color: black;
     border-width: thin;
 }
 .class {
+    float: right;
+}
+
+.image {
+    width: 250px;
+    height:100px;
     float: right;
 }

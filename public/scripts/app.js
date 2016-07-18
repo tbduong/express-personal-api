@@ -29,7 +29,7 @@ $.ajax({
     });
   });
 
-  $travelsList.on('click', '#delete', function() {
+  $travelsList.on('click', '.delete-btn', function() {
     $.ajax({
       method: 'DELETE',
       url: '/api/travels/'+$(this).attr('_id'),

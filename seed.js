@@ -14,13 +14,13 @@ var db = require('./models'); //requires models folder to access ALL models.
 // })
 var travels_list = [
   {
-    image: null,
+    image: "<img src='/images/patagonia.jpeg'>",
     city: "Torres del Paine",
     state: null,
     country: "Chile",
     year_visited: "2016",
     international: true,
-    description:" Went on an amazing 5 day backpacking trek through the many terrains of the Torres Del  "
+    summary:" Went on an amazing 5 day backpacking trek through the many terrains of the Torres Del Paine national park. A beautiful wonder of the world that stretches between the beautiful neighboring South American countries of Chile and Argentina. Living 5 days out of a 25lb backpack is no joke, but ended up being one of the greatest experiences of my life. Unpredictable weather, beautiful blue glaciers, and enormous mountains, make for this trek to be a must see in your life."
   },
   {
     image: null,
@@ -29,7 +29,7 @@ var travels_list = [
     country: "Chile",
     year_visited: "2016",
     international: true,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -38,7 +38,7 @@ var travels_list = [
     country: "Austria",
     year_visited: "2015",
     international: true,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -47,7 +47,7 @@ var travels_list = [
     country: "Italy",
     year_visited: "2015",
     international: true,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -56,7 +56,7 @@ var travels_list = [
     country: "Croatia",
     year_visited: "2015",
     international: true,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -65,7 +65,7 @@ var travels_list = [
     country: "Canada",
     year_visited: "2015",
     international: true,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -74,7 +74,7 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     international: false,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -83,7 +83,7 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     international: false,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -92,7 +92,7 @@ var travels_list = [
     country: "US",
     year_visited: "2016",
     international: false,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -101,7 +101,7 @@ var travels_list = [
     country: "US",
     year_visited: "2015",
     international: false,
-    description:" "
+    summary:" "
   },
   {
     image: null,
@@ -110,16 +110,16 @@ var travels_list = [
     country: "US",
     year_visited: "2014",
     international: false,
-    description:" "
+    summary:" "
   },
   {
-    image: null,
+    image: "<img src='/images/curacao.jpeg'>",
     city: "Jan Thiel",
     state: null,
     country: "Curacao",
     year_visited: "2013",
     international: true,
-    description:" "
+    summary:" "
   },
 ];
 

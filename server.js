@@ -121,7 +121,7 @@ app.put('/api/travels/:id', function updateTravel(req,res) {
     foundTravel.country = req.body.country;
     foundTravel.year_visited = req.body.year_visited;
     foundTravel.international = req.body.international;
-    foundTravel.description = req.body.description;
+    foundTravel.summary = req.body.summary; //why isn't this working
     // add newTravel to database
     foundTravel.save(function(err, updatedTravel){
       if (err) {
@@ -131,18 +131,12 @@ app.put('/api/travels/:id', function updateTravel(req,res) {
     });
   });
 
-//delete travel entryapp.delete('/api/photos/:id', function (req, res) {
-// console.log(req.params);
-//
-// db.Travel.findOneAndRemove({ _id: req.params.id }, function (err, deletedTravel) {
-//   res.json(deletedTravel);
-//   });
 app.delete('/api/travels/:id', function(req, res) {
   // console.log(req.params);
   var travelId = req.params.id;
   db.Travel.findOneAndRemove({_id: travelId}, function(err, deletedTravel) {
     if (err) { res.sendStatus(410); }
-    console.log('You just deleted ', deletedTravel);
+    console.log('!!!You just deleted ', deletedTravel);
     res.json(deletedTravel);
   });
 });

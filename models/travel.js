@@ -6,9 +6,9 @@ var TravelSchema = new Schema({
   city: String,
   state: String,
   country: String,
-  year_visited: String,
+  year_visited: Number,
   international: Boolean,
-  description: String,
+  summary: String,
 });
 
 var Travel = mongoose.model('Travel', TravelSchema); //set travel model to variable 'Travel'
