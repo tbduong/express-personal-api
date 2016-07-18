@@ -75,9 +75,9 @@
               <td>{{country}}</td>
               <td>{{year_visited}}</td>
               <td>{{summary}}</td>
-              <td><img src={{image}}></td>
+              <td><img class="img-responsive" src="{{image}}"></td>
               <td>
-                <button type="button" name="button" class="delete btn btn-danger center" data-id="_id">Delete Entry</button>
+                <button type="button" name="button" class="delete btn btn-danger center" data-id={{_id}}>Delete Entry</button>
               </tr>
             </tr>
             {{/each}}

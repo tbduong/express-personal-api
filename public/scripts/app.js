@@ -29,10 +29,10 @@ $.ajax({
     });
   });
 
-  $travelsList.on('click', '.delete-btn', function() {
+  $travelsList.on('click', '.delete', function() {
     $.ajax({
       method: 'DELETE',
-      url: '/api/travels/'+$(this).attr('_id'),
+      url: '/api/travels/'+$(this).attr('data-id'),
       success: deleteTravelSuccess,
       error: deleteTravelError
     });
