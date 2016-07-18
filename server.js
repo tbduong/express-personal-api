@@ -120,8 +120,8 @@ app.put('/api/travels/:id', function updateTravel(req,res) {
     foundTravel.state = req.body.state;
     foundTravel.country = req.body.country;
     foundTravel.year_visited = req.body.year_visited;
-    foundTravel.video = req.body.video;  //attach link to vimeo.com
     foundTravel.international = req.body.international;
+    foundTravel.description = req.body.description;
     // add newTravel to database
     foundTravel.save(function(err, updatedTravel){
       if (err) {
