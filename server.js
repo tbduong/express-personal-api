@@ -52,7 +52,7 @@ app.get('/api', function api_index(req, res) {
       {method: "GET", path: "/api/profile", description: "Data about me!"}, // CHANGE ME
       {method: "GET", path: "/api/travels", description: "Shows all (most) of the places I have traveled to"},
       {method: "GET", path: "/api/travels/:id", description: "Shows all (most) of the places I have traveled to by ID"},
-      {method: "POST", path: "/api/travels/:id", description: "Add a recommended destination!"},
+      {method: "POST", path: "/api/travels/:id", description: "Add your own trip and experience!"},
       {method: "PUT", path: "/api/travels/:id", description: "Edit a current travel entry by id"},
       {method: "DELETE", path: "/api/travels/:id", description: "Delete a travel entry by id"}
     ]
