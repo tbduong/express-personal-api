@@ -7,7 +7,6 @@ var TravelSchema = new Schema({
   state: String,
   country: String,
   year_visited: Number,
-  international: Boolean,
   summary: String,
 });
 

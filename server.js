@@ -94,10 +94,8 @@ app.post('/api/travels', function createEntry (req, res){
     city: req.body.city,
     state: req.body.state,
     country: req.body.country,
-    year_visited: req.body.year_visited,
-    video: req.body.video,                //attach link to vimeo.com
+    year_visited: req.body.year_visited,     //attach link to vimeo.com
     image: req.body.image,                //upload local img
-    international: req.body.international
   });
   console.log(newTravelEntry);
   //add newTravelEntry to Travel db

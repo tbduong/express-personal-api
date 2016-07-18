@@ -19,70 +19,62 @@ var travels_list = [
     state: null,
     country: "Chile",
     year_visited: "2016",
-    international: true,
-    summary:" Went on an amazing 5 day backpacking trek through the many terrains of the Torres Del Paine national park. A beautiful wonder of the world that stretches between the beautiful neighboring South American countries of Chile and Argentina. Living 5 days out of a 25lb backpack is no joke, but ended up being one of the greatest experiences of my life. Unpredictable weather, beautiful blue glaciers, and enormous mountains, make for this trek to be a must see in your life."
+    summary:" Went on an amazing 5 day backpacking trek through the many terrains of the Torres Del Paine national park. A beautiful wonder of the world that stretches between the beautiful neighboring South American countries of Chile and Argentina. Living 5 days out of a 25lb backpack is no joke, but ended up being one of the greatest experiences of my life. Unpredictable weather, beautiful blue glaciers, and enormous mountains, make for this trek to be a must see in your life. Hiking up 4hours to the final Torres (towers) never felt so good."
   },
   {
-    image: null,
+    image: "<img src='/images/santiago.jpg'>" ,
     city: "Santiago",
     state: null,
     country: "Chile",
     year_visited: "2016",
-    international: true,
-    summary:" "
+    summary:"Before and after I was able to do the beautiful trek of Torres del Paine, I had the opportunity to explore the giant metrpolis that is Santiago. Chile is an extremely long country with so much beautiful land... and yet somehow 60% of all chilean people live in the heart of Santiago. Wondrous food, entertainment, nightlife, and art is sprinkled all over the streets, giving this metropolitan area a cultural, laxed, and latin feel....did I mention again that the food is amazing?!"
   },
   {
-    image: null,
+    image: "<img src='/images/vienna.jpeg'>",
     city: "Vienna",
     state: null,
     country: "Austria",
     year_visited: "2015",
-    international: true,
-    summary:" "
+    summary:"Vienna, Austria... the heart of everything art, ballet, and classical iconic music. Vienna was one of the countries I visited during my 2.5 week stunt in Europe... the other two being the following countries after. Austrian culture thrives in their art, beautiful architecture, and the magnificent and rich history that all of Austria prides itself in. Not to mention the hometown of the famous Mozart. Austria has a sense of historic flare, mixed in with their modern contemporary nightlife and buildings. Let's not forget about the delicious brew and bratwurst stands that scattered the city. "
   },
   {
-    image: null,
+    image: "<img src='/images/venice.jpeg'>",
     city: "Venice",
     state: null,
     country: "Italy",
     year_visited: "2015",
-    international: true,
-    summary:" "
+    summary:"Gondolas, romance, sunsets.... pizza, cannolis, lasagna, and pasta... need I say more? "
   },
   {
-    image: null,
+    image: "<img src='/images/croatia.jpeg'>",
     city: "Dubrovnik",
     state: null,
     country: "Croatia",
     year_visited: "2015",
-    international: true,
-    summary:" "
+    summary:"King Landing (queue Game of Thrones theme). This magnificent old town may not be very large, but you can bet yourself that you will be intrigued by the beautiful views of the town and the ocean while scaling the fort walls. Croatia can have gloomy and storms during the winters, but the summers are beuatiful, filled with fun water sports, ridiculously blue water, and DJ pool parties all around the top of the forts. It has never been known as a great vacay spot, but thanks to Game of Thrones, this country is getting the recognition it needs. "
   },
   {
-    image: null,
+    image: "<img src='/images/vancouver.jpg'>",
     city: "Vancouver",
     state: null,
     country: "Canada",
     year_visited: "2015",
-    international: true,
     summary:" "
   },
   {
-    image: null,
+    image: "<img src='/images/zion.jpeg'>",
     city: "Zion National Park",
     state: "Utah",
     country: "US",
     year_visited: "2016",
-    international: false,
-    summary:" "
+    summary:"Beautiful redstone hikes. The most breathtaking part... being able to make it up to Angel's Landing, a magnificent view following hiking up to 1000ft elevation!"
   },
   {
-    image: null,
+    image: "<img src='/images/antelope.jpeg'>",
     city: "Page (Antelope Canyon)",
     state: "Arizona",
     country: "US",
     year_visited: "2016",
-    international: false,
     summary:" "
   },
   {
@@ -91,25 +83,22 @@ var travels_list = [
     state: "Oregon",
     country: "US",
     year_visited: "2016",
-    international: false,
     summary:" "
   },
   {
-    image: null,
+    image: "<img src='/images/ny.jpeg'>",
     city: "New York",
     state: "New York",
     country: "US",
     year_visited: "2015",
-    international: false,
     summary:" "
   },
   {
-    image: null,
+    image: "<img src='/images/seattle.jpeg'>",
     city: "Seattle",
     state: "Washington",
     country: "US",
     year_visited: "2014",
-    international: false,
     summary:" "
   },
   {
@@ -118,8 +107,7 @@ var travels_list = [
     state: null,
     country: "Curacao",
     year_visited: "2013",
-    international: true,
-    summary:" "
+    summary:"Known as one of the ABC islands in the Caribbean (the others being Aruba and Barbados), Curacao is the lesser known island, that holds a wonderful charm. Filled with wonderful seafood, secret beaches, and snorkel spots, Curacao can be a place of relaxation or adventure. It is not a very large island, but there is plenty to do there (all of which will give you a wonderful tan!). "
   },
 ];
 
